@@ -1,0 +1,15 @@
+<mat-card class="example-card dog-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title class="dog-name">{{ dog.name }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="dog.image" alt="{{ dog.name }}" />
+  <mat-card-content>
+    <p class="dog-description">
+      {{ dog.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="openModal()">Learn More</button>
+  </mat-card-actions>
+</mat-card>
